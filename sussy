@@ -53,28 +53,6 @@ game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:Invok
 end
 end
 
-local function place4() 
-  if game:GetService("Workspace")["_wave_num"].Value < getgenv().wavetolose then
-        local args = {
-    [1] = getgenv().id,
-    [2] = CFrame.new(-2876.62305, 40.2268791, -123.590302, 1, 0, -0, -0, 1, -0, 0, 0, 1) * CFrame.Angles(0, -0, -0)
-}
-
-game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-end
-end
-
-local function place5() 
-  if game:GetService("Workspace")["_wave_num"].Value < getgenv().wavetolose then
-        local args = {
-    [1] = getgenv().id,
-    [2] = CFrame.new(-2876.62305, 40.2268791, -123.590302, 1, 0, -0, -0, 1, -0, 0, 0, 1) * CFrame.Angles(0, -0, -0)
-}
-
-game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
-end
-end
-
 
 
 local function upgrade() -- Upgrades to upgrade 5 and auto upgrades lowest upgraded unit
@@ -187,8 +165,6 @@ while _G.a do
 task.wait()
 place()
 place3()
-place4()
-place5()
 upgrade()
 start()
 sell()
