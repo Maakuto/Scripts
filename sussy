@@ -33,7 +33,7 @@ for i, v in next, game:GetService("Workspace")["_UNITS"]:GetChildren() do
     if v.Name == getgenv().unit then
         local args = {
     [1] = v._stats.uuid.Value,
-    [2] = CFrame.new(-2949.064453125, 91.80620574951172, -698.9860229492188) * CFrame.Angles(0, -0, -0)
+    [2] = CFrame.new(-2876.62305, 40.2268791, -123.590302, 1, 0, -0, -0, 1, -0, 0, 0, 1) * CFrame.Angles(0, -0, -0)
 }
 
 game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
@@ -46,7 +46,7 @@ local function place3()
   if game:GetService("Workspace")["_wave_num"].Value < getgenv().wavetolose then
         local args = {
     [1] = getgenv().id,
-    [2] = CFrame.new(-2949.064453125, 91.80620574951172, -698.9860229492188) * CFrame.Angles(0, -0, -0)
+    [2] = CFrame.new(-2876.62305, 40.2268791, -123.590302, 1, 0, -0, -0, 1, -0, 0, 0, 1) * CFrame.Angles(0, -0, -0)
 }
 
 game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
@@ -57,7 +57,7 @@ local function place4()
   if game:GetService("Workspace")["_wave_num"].Value < getgenv().wavetolose then
         local args = {
     [1] = getgenv().id,
-    [2] = CFrame.new(-2949.064453125, 91.80620574951172, -698.9860229492188) * CFrame.Angles(0, -0, -0)
+    [2] = CFrame.new(-2876.62305, 40.2268791, -123.590302, 1, 0, -0, -0, 1, -0, 0, 0, 1) * CFrame.Angles(0, -0, -0)
 }
 
 game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
@@ -68,7 +68,7 @@ local function place5()
   if game:GetService("Workspace")["_wave_num"].Value < getgenv().wavetolose then
         local args = {
     [1] = getgenv().id,
-    [2] = CFrame.new(-2949.064453125, 91.80620574951172, -698.9860229492188) * CFrame.Angles(0, -0, -0)
+    [2] = CFrame.new(-2876.62305, 40.2268791, -123.590302, 1, 0, -0, -0, 1, -0, 0, 0, 1) * CFrame.Angles(0, -0, -0)
 }
 
 game:GetService("ReplicatedStorage").endpoints.client_to_server.spawn_unit:InvokeServer(unpack(args))
