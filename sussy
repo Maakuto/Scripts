@@ -101,7 +101,7 @@ end
 local function Create() -- Creates the map
 local args = {
     [1] = "_lobbytemplategreen6",
-    [2] = "naruto_infinite",
+    [2] = "demonslayer_infinite",
     [3] = true,
     [4] = "Hard"
 }
